@@ -1,3 +1,13 @@
+@import url('https://fonts.cdnfonts.com/css/codec-pro');
+
+:root{
+  --blue_bcg: #8BC7D0;
+  --blue_nav: #2A878F;
+  --blue_2: #4CA1D6;
+  --blue_3: #4BB8D4;
+  --vibr_green: #4CA773;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +16,12 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Codec Pro', sans-serif;
+  background-color: var(--blue_bcg);
+}
+
+.logo-img{
+  height: 30px;
 }
 
 li {
@@ -18,8 +33,10 @@ a {
 }
 
 .header {
-  border-bottom: 1px solid #E2E8F0;
-  background-color: #222;
+  background-color: var(--blue_nav);
+  position: fixed;
+  width: 100%;
+  box-shadow: 8px 8px 15px #1B565C;
 }
 
 .navbar {
@@ -40,7 +57,6 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  /* background-color: #101010; */
   background-color: #fff;
 }
 
@@ -55,40 +71,36 @@ a {
 }
 
 .nav-link {
-  /* font-size: 1.6rem; */
   font-size: 2rem;
   font-weight: 400;
-  /* color: #475569; */
   color: #fff;
-  /* change */
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: var(--blue_nav);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
 }
 
 .logo {
-  /* font-size: 2.1rem; */
   font-size: 3rem;
   font-weight: 500;
-  /* color: #482ff7; */
   color: #fff;
 }
 
-@media only screen and (max-width: 1150px) {
+
+@media only screen and (max-width: 1125px) {
   .links {
       position: fixed;
-      left: -100%;
+      left: 100%;
       top: 5rem;
       flex-direction: column;
-      /* background-color: #fff; */
-      background-color: #222;
+      background-color: var(--blue_nav);
       width: 100%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
   .nav-link {
