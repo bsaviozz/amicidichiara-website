@@ -14,12 +14,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function responsiveFunc() {
-    var x = document.getElementById("myNav");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-  }
+const hamburger = document.querySelector(".toggle-btn");
+const navMenu = document.querySelector(".links");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+
+// when we click on hamburger icon its close 
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
