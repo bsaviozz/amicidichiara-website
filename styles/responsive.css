@@ -52,7 +52,7 @@
   }
   @media only screen and (max-width: 900px) {   
 
-    .sec-chisono{
+    .sec-chisono, .sec-dispo{
         width: 95%;
     }
 

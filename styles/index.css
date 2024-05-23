@@ -3,10 +3,11 @@
 
 :root{
   --blue_bcg: #8cc8d1;
-  --blue_nav: #2A878F;
+  --blue_nav: #2a878f;
   --blue_2: #4ca1d6;
   --blue_3: #4BB8D4;
   --vibr_green: #4CA773;
+  --text: #2F4F4F;
 }
 
 * {
@@ -145,13 +146,13 @@ a {
 }
 
 /*CHI SONO*/
-.sec-chisono {
+.sec-chisono, .sec-dispo, .sec-contatti {
   width: 80%;
   margin: 10px auto;
   padding: 20px;
 }
 
-.title-chisono {
+.title-chisono, .title-dispo, .title-contatti {
   text-align: center;
   font-family: "Lobster", sans-serif;
   font-size: 4em;
@@ -173,11 +174,11 @@ a {
 }
 
 
-.text-chisono {
+.text-chisono, .text-dispo, .text-contatti {
   flex-grow: 1;
   font-size: 1.5em;
   line-height: 1.6;
-  color: #2F4F4F;
+  color: var(--text);
   border-bottom: 3px solid var(--blue_nav);
   border-right: 3px solid var(--blue_nav);
   border-radius: 15px;
@@ -186,9 +187,21 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-
 /*DISPONIBILITÀ*/
+.text-dispo {
+  text-align: center;
+}
+
+.phone-number{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
 /*CONTATTI*/
+.text-contatti .ul{
+  text-align: center;
+}
 
 /*GO UP*/
 .go-up {
@@ -215,4 +228,68 @@ a {
 }
 
 /*FOOTER*/
+.social-icon{
+  width:20px;
+  height: auto;
+}
 
+.footer{
+  padding: 40px 0;
+  background-color: rgb(42, 135, 143, 0.6);
+}
+
+.footer .social{
+  text-align: center; 
+  padding-bottom: 25px;
+  color: var(--text);
+}
+
+.footer .social a{
+  font-size: 24px; 
+  color: inherit; 
+  border: 1px solid var(--text);
+  width: 40px; 
+  height: 40px;
+  line-height: 38px; 
+  display: inline-block; 
+  text-align: center; 
+  border-radius: 50%;
+  margin: 0 8px; 
+  opacity: 0.75;
+}
+
+.footer .social a:hover{
+  opacity: 0.9;
+} 
+
+.footer ul{ 
+  margin-top: 0; 
+  padding: 0;
+  list-style: none; 
+  font-size: 16px;
+  line-height: 1.6; 
+  margin-bottom: 0; 
+  text-align: center;
+}
+
+.footer ul li a{
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.6;
+} 
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+  
+.footer ul li a:hover { 
+  opacity: 1;
+}
+
+.footer .copyright{
+  margin-top:15px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text);
+}
