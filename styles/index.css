@@ -173,7 +173,6 @@ a {
   margin-right: 20px;
 }
 
-
 .text-chisono, .text-dispo, .text-contatti {
   flex-grow: 1;
   font-size: 1.5em;
@@ -199,9 +198,20 @@ a {
 }
 
 /*CONTATTI*/
-.text-contatti .ul{
+.text-contatti {
   text-align: center;
 }
+
+.text-contatti a {
+  text-decoration: none;
+  color: var(--blue_nav); 
+  font-weight: bold; 
+}
+
+.text-contatti a:hover {
+  color: var(--blue_3); 
+}
+
 
 /*GO UP*/
 .go-up {

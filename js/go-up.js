@@ -1,23 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     const goUpButton = document.getElementById("goUp");
-    const chiSonoSection = document.getElementById("chisono");
 
-    // Function to check if the "Chi Sono" section is in view
-    function isSectionInView() {
-        const rect = chiSonoSection.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight && rect.bottom >= 0
-        );
-    }
-
-    // Event listener for scroll events
-    window.addEventListener("scroll", function() {
-        if (isSectionInView()) {
+    // Function to check if the scroll position is past a certain point
+    function checkScrollPosition() {
+        if (window.scrollY > 300) { // Adjust this value to the desired scroll position
             goUpButton.style.display = "block";
         } else {
             goUpButton.style.display = "none";
         }
-    });
+    }
+
+    // Event listener for scroll events
+    window.addEventListener("scroll", checkScrollPosition);
+
+    // Initial check in case the user starts at a scrolled position
+    checkScrollPosition();
 
     // Smooth scroll to the top when the button is clicked
     goUpButton.addEventListener("click", function(event) {
