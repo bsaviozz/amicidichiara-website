@@ -113,7 +113,8 @@
     }
 
     .cat-section{
-        max-width: 93%;
+        max-width: 80%;
+        grid-template-columns: 1fr; 
     }
   }
 
