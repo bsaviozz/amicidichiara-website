@@ -95,9 +95,8 @@
       grid-template-columns: auto auto;
     }
 
-    .body{
-        max-width: 580px;
+    .content, .content-ripro{
+        max-width: 95%;
     }
-  
   }
   
