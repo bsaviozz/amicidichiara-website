@@ -135,3 +135,9 @@ hr{
     text-decoration: none;
     cursor: pointer;
 }
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+}

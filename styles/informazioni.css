@@ -77,6 +77,13 @@
     font-size: 1.8em;
     color: var(--text);
     margin-bottom: 1vw;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
 }
 
 @media only screen and (max-width: 600px) {
