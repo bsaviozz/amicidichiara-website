@@ -1,0 +1,78 @@
+/*sections*/
+.first{
+    margin-top: 10vh;
+}
+
+.title{
+  text-align: center;
+  font-family: "Lobster", sans-serif;
+  font-size: 4em;
+  color: #2F4F4F;
+}
+
+
+.text{
+    flex-grow: 1;
+    font-size: 1.8em;
+    line-height: 1.6;
+    color: var(--text);
+    border-bottom: 3px solid var(--blue_nav);
+    border-right: 3px solid var(--blue_nav);
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 4vw;
+    margin-top: 1vw;
+}
+
+/*faq*/
+.faq {
+    margin: 4vw;
+}
+
+.f {
+    margin-top: 1vw;
+}
+
+.collapsible {
+    background-color: rgba(42, 135, 143, 0.8);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.active, .collapsible:hover {
+    background-color: rgba(42, 135, 143);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: 600;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.8em;
+    color: var(--text);
+    margin-bottom: 1vw;
+}
