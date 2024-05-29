@@ -114,20 +114,21 @@ a {
 }
 
 .gallery {
-  margin: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   justify-content: center;
   display: none;
-  gap: 5px;
+  /*gap: 5px;*/
 }
 
 .cat {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  /*border-radius: 20px;*/
 }
 
 .collage {
