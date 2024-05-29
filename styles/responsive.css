@@ -111,13 +111,14 @@
     }
   }
 
-  @media only screen and (max-width: 595px) {
-    .content{
+  @media only screen and (max-width: 520px) {
+    .content, .cat-section{
         max-width: 93%;
     }
-
+  }
+  
+  @media only screen and (max-width: 400px) {
     .cat-section{
         max-width: 70%;
     }
   }
-  
