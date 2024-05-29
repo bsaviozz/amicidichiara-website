@@ -53,9 +53,9 @@
       display:none;
     }
 
-    .gallery{
+    /*.gallery{
         max-width: 97%;
-    }
+    }*/
   }
 
   @media only screen and (max-width: 900px) {   
@@ -79,9 +79,9 @@
         font-size: 1.5rem;
     }
 
-    .gallery{
+    /*.gallery{
         max-width: 96%;
-    }
+    }*/
   
   }
 
@@ -102,14 +102,14 @@
       font-size: 2rem;
     }
   
-    .gallery{
+    /*.gallery{
     max-width: 95%;
       grid-template-columns: auto auto;
-    }
+    }*/
   }
 
   @media only screen and (max-width: 520px) {
-    .gallery, .cat-section{
+    .cat-section{
         max-width: 93%;
     }
   }
