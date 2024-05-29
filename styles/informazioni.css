@@ -8,6 +8,8 @@
   font-family: "Lobster", sans-serif;
   font-size: 4em;
   color: #2F4F4F;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 
@@ -75,4 +77,12 @@
     font-size: 1.8em;
     color: var(--text);
     margin-bottom: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .title{
+        font-size: 3em;
+    }
+
 }
